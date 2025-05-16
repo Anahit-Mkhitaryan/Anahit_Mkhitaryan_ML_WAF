@@ -1,0 +1,77 @@
+[2025-05-13T06:11:25.691666] Request: GET /favicon.ico? => Prediction: 0
+[2025-05-13T06:12:01.655334] Request: GET /admin/delete? => Prediction: 0
+[2025-05-13T06:12:57.149662] Request: GET /user/profile? => Prediction: 0
+[2025-05-13T06:13:25.693155] Request: GET /test?input=%3Cscript%3Ealert(1)%3C/script%3E => Prediction: 0
+[2025-05-13T06:13:46.147141] Request: GET /test?input=%27%3Cscript%3Ealert(1)%3C/script%3E => Prediction: 0
+[2025-05-13T06:13:59.883094] Request: GET /test?input=%27a%27%3Cscript%3Ealert(1)%3C/script%3E => Prediction: 0
+[2025-05-13T06:26:28.879492] Request: GET /admin/delete? => Prediction: 0
+[2025-05-13T06:29:43.036378] Request: GET /admin/delete? => Prediction: 0
+[2025-05-13T06:29:45.578628] Request: GET /admin/delete? => Prediction: 0
+[2025-05-13T06:29:45.637009] Request: GET /favicon.ico? => Prediction: 0
+[2025-05-13T06:29:49.777204] Request: GET /favicon.ico? => Prediction: 0
+[2025-05-13T08:11:28.565680] Request: /predict => Prediction: normal
+[2025-05-13T08:11:28.575382] Request: GET /search?query=%3Cscript%3Ealert(%27XSS%27)%3C/script%3E => Prediction: malicious
+[2025-05-13T08:11:41.982922] Request: /predict => Prediction: normal
+[2025-05-13T08:11:41.994881] Request: GET /admin/delete? => Prediction: normal
+[2025-05-13T08:12:01.134939] Request: /predict => Prediction: normal
+[2025-05-13T08:12:01.144604] Request: <script>alert(1)</script> => Prediction: malicious
+[2025-05-13T08:12:41.136611] Request: /predict => Prediction: normal
+[2025-05-13T08:12:41.147363] Request: Hello => Prediction: normal
+[2025-05-13T08:13:10.274993] Request: /predict => Prediction: normal
+[2025-05-13T08:13:10.283098] Request: <script>alert(1)</script>
+ => Prediction: malicious
+[2025-05-13T08:26:29.809928] Request: /home => Prediction: normal
+[2025-05-13T08:26:29.822893] Request: /login => Prediction: normal
+[2025-05-13T08:26:29.834822] Request: /search => Prediction: malicious
+[2025-05-13T08:26:29.848821] Request: /login => Prediction: normal
+[2025-05-13T08:26:29.859792] Request: /search => Prediction: malicious
+[2025-05-13T08:26:29.870762] Request: /home => Prediction: normal
+[2025-05-13T08:27:50.849988] Request: /predict => Prediction: normal
+[2025-05-13T08:27:50.859964] Request: <script>alert(1)</script>
+ => Prediction: malicious
+[2025-05-13T08:47:00.638572] Request: GET /home => Prediction: normal
+[2025-05-13T08:47:00.651296] Request: GET /login => Prediction: normal
+[2025-05-13T08:47:00.662272] Request: GET /search?query=hello => Prediction: malicious
+[2025-05-13T08:47:00.673589] Request: GET /login?username=admin'%20OR%20'1'='1 => Prediction: malicious
+[2025-05-13T08:47:00.684521] Request: GET /search?query=%3Cscript%3Ealert('XSS')%3C/script%3E => Prediction: malicious
+[2025-05-13T08:47:00.695890] Request: GET /home?file=../../../../etc/passwd => Prediction: malicious
+[2025-05-13T08:47:16.528426] Request: POST /predict => Prediction: normal
+[2025-05-13T08:47:16.538432] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T08:47:32.688309] Request: POST /predict => Prediction: normal
+[2025-05-13T08:47:32.698526] Request: <script>alert(1)</script> => Prediction: malicious
+[2025-05-13T08:48:17.065620] Request: POST /predict => Prediction: normal
+[2025-05-13T08:48:17.074594] Request: <script>alert(1)</script> => Prediction: malicious
+[2025-05-13T08:49:01.356108] Request: POST /predict => Prediction: normal
+[2025-05-13T08:49:01.364103] Request: <script>alert(1)</script> => Prediction: malicious
+[2025-05-13T08:58:08.922952] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:08.940903] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T08:58:28.632193] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:28.647120] Request: <script>alert(1)</script> => Prediction: malicious
+[2025-05-13T08:58:28.749119] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:28.763117] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T08:58:33.138468] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:33.154555] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T08:58:39.481305] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:39.498000] Request: I love you => Prediction: malicious
+[2025-05-13T08:58:39.581626] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:39.596943] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T08:58:41.747593] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:41.763189] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T08:58:44.974948] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:44.997036] Request: hi => Prediction: malicious
+[2025-05-13T08:58:45.091767] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:45.107625] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T08:58:46.427500] Request: POST /predict => Prediction: normal
+[2025-05-13T08:58:46.445000] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-13T09:10:51.034188] Request: POST /predict => Prediction: normal
+[2025-05-13T09:10:51.055176] Request: <script> => Prediction: malicious
+[2025-05-13T09:10:51.195017] Request: POST /predict => Prediction: normal
+[2025-05-13T09:10:51.212226] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-16T00:19:22.319504] Request: POST /predict => Prediction: normal
+[2025-05-16T00:19:22.329720] Request: GET /favicon.ico? => Prediction: normal
+[2025-05-16T11:46:25.453265] Request: POST /predict => Prediction: normal
+[2025-05-16T11:46:25.467054] Request: <script>alert(2)</script> => Prediction: malicious
+[2025-05-16T11:51:46.579988] Request: POST /predict => Prediction: normal
+[2025-05-16T11:51:46.594019] Request: <script>alert(1)</script> => Prediction: malicious
+[2025-05-16T11:52:34.028833] Request: POST /predict => Prediction: normal
+[2025-05-16T11:52:34.040683] Request: <script>alert(1)</script> => Prediction: malicious
